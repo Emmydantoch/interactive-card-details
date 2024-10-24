@@ -1,22 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="index.css">
   <title>Frontend Mentor | Interactive card details form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
 
-  0000 0000 0000 0000
+<body>
+  <main>
+
+    <!-- image part -->
+    <figure class="image-part">
+
+    <img src="images/bg-main-desktop.png" alt="bg-main-desktop" />
+    
+    <!-- CARD FRONT -->
+    <figure class="card-front">
+
+      <img src="images/bg-card-front.png" alt="bg-card-front" />
+
+      <section class="card-details">
+        <img src="images/card-logo.svg" alt="card-logo">
+        <p id="card-number">0000 0000 0000 0000</p>
+
+        <section class="bottom">
+          <P>Jane Appleseed</P>
+          <P>00/00</P>
+        </section>
+
+      </section>
+    </figure>
+
+    <!-- CARD BACK -->
+    <figure class="card-back">
+
+      <img src="images/bg-card-back.png" alt="bg-card-back" />
+      <p id="cvc">000</p>
+    </figure>
+
+    </figure>
+
+    <form>
+      <div>
+        <label for="cardholdername">Cardholder Name</label>
+        <input type="text" id="cardholdername" placeholder="e.g. Jane Appleseed">
+      </div>
+
+      <div>
+        <label for="cardnumber">Card Number</label>
+        <input type="text" id="cardnumber" placeholder="e.g. 1234 1234 1234 1234">
+      </div>
+
+     <div id="lastinput">
+      <div>
+        <label for="exp">Exp. Date (MM/YY)</label>
+        <div id="exp">
+          <input type="text" placeholder="MM" id="month"/>
+        <input type="text" placeholder="YY" id="year"/>
+        </div>
+      </div>
+
+      <div>
+        <label for="cvcinput">CVC</label>
+        <input type="text" id="cvcinput" placeholder=" e.g. 123">
+      </div>
+     </div>
+      <button>Confirm</button>
+    </form>
+  </main>
+
+
+  <!-- 0000 0000 0000 0000
   Jane Appleseed
   00/00
 
@@ -33,19 +93,20 @@
   YY
 
   CVC
-  e.g. 123
+  e.g. 123 -->
 
-  Confirm
+  <!-- Confirm -->
 
   <!-- Completed state start -->
 
-  Thank you!
+  <!-- Thank you!
   We've added your card details
-  Continue
-  
+  Continue -->
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Philips11624">UKO PHILIPS</a>.
   </div>
 </body>
+
 </html>

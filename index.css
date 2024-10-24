@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Space Grotesk", sans-serif;
+    user-select: none;
+}
+img {
+    pointer-events: none;
+}
+
+  .attribution { 
+    font-size: 11px; 
+    text-align: center; }
+
+
+  .attribution a { 
+    color: hsl(228, 45%, 44%); }
+
+    .image-part{
+        position: relative;
+        width: 40rem;
+    }
+    .image-part>img {
+        width: 23rem;
+    }
+    .card-front, .card-back {
+        position:absolute;
+        top: 50px;
+        bottom: 0;
+        left: 100px;
+        height: max-content;
+    }
+
+.card-front>img, .card-back>img{
+    width: 23rem;
+}
+
+    .card-back{
+    top: 350px;
+    left: 200px;
+    height: max-content;
+
+    }
+
+    #cvc {
+        position:absolute;
+        top: 90px;
+        bottom: 0;
+        right: 50px; 
+        color: hsl(0, 0%, 100%);
+    }
+
+    .card-details {
+        position:absolute;
+        top: 20px;
+        bottom: 0;
+        left: 30px; 
+        color: hsl(0, 0%, 100%);
+        width: 85%;
+    
+    }
+    #card-number{
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        letter-spacing: 0.3rem;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    main{
+        display: flex;
+
+    }
+
+    main>form{
+        align-self: center;
+    }
+
+    form div{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    form div label{
+        margin-bottom: 5px;
+       color: hsl(278, 68%, 11%);
+       font-weight: 700;
+       text-transform: uppercase;
+       font-size:12px;
+       letter-spacing: 0,1rem;
+    }
+    #exp, #lastinput{
+        display: flex;
+        flex-direction: row;
+    }
+    #year{
+        margin-left: 10px;
+    }
+    #lastinput>div:last-child{
+        margin-left: 15px;
+    }
+    button{
+        width:100%;
+        align-items: center;
+    }
