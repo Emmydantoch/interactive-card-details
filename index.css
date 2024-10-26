@@ -82,6 +82,11 @@ img {
 
     main>form{
         align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
     form div{
@@ -108,6 +113,30 @@ img {
         margin-left: 15px;
     }
     button{
-        width:100%;
+        width:21rem;
         align-items: center;
+        padding: 14px;
+        background-color: hsl(278, 68%, 11%);
+        border: none;
+        color: hsl(0, 0%, 100%);
+        border-radius: 5px;
+        font-size: 14px;
     }
+    form div input{
+        padding: 10px;
+        border-radius: 10px;
+        width: 20rem;
+        margin-bottom: 10px;
+        border: 1px solid hwb(270 87% 13%) ;
+    }
+    #exp input{
+        width: 3rem;
+    }
+    #cvcinput{
+        width: 9.5rem;
+    }
+    form div input::placeholder{
+        color: hwb(270 87% 13%);
+        font-weight: 500;
+    }
+
