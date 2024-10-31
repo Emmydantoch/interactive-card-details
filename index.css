@@ -140,6 +140,10 @@ img {
         font-weight: 500;
     }
 
+    form div input:focus {
+        outline-color: hsl(278, 94%, 30%);
+    }
+
 div p{
         display: none;
         color: hsl(0, 100%, 66%);
