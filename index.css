@@ -140,3 +140,20 @@ img {
         font-weight: 500;
     }
 
+div p{
+        display: none;
+        color: hsl(0, 100%, 66%);
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 10px;
+}
+.forexp p {
+         font-size: 10px;
+         width: 5rem;
+}
+
+.errorforyear {
+         margin-left: 12px;
+}
+
+
