@@ -39,6 +39,8 @@ const cardholdernameValidation = () => {
             cne2.style.display = 'none'
         }
     } else {
+        cardholdername.style.borderColor = 'hsl(0, 100%, 66%)'
+        cardholdername.style.outlineColor = 'hsl(0, 100%, 66%)'
         cne1.style.display = 'block'
         cne2.style.display = 'none'
     }
@@ -126,3 +128,7 @@ cardnumber.addEventListener('input', cardnumberValidation)
 month.addEventListener('input', monthValidation)
 year.addEventListener('input', yearValidation)
 cvc.addEventListener('input', cvcValidation)
+
+const submit = () =>{
+    
+}

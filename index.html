@@ -19,31 +19,32 @@
     <!-- image part -->
     <figure class="image-part">
 
-    <img src="images/bg-main-desktop.png" alt="bg-main-desktop" />
+      <img src="images/bg-main-desktop.png" alt="bg-main-desktop" id="for-desktop"/>
+      <img src="images/bg-main-mobile.png" alt="bg-main-mobile" id="for-mobile"/>
     
     <!-- CARD FRONT -->
-    <figure class="card-front">
+       <figure class="card-front">
 
-      <img src="images/bg-card-front.png" alt="bg-card-front" />
+          <img src="images/bg-card-front.png" alt="bg-card-front" />
 
-      <section class="card-details">
-        <img src="images/card-logo.svg" alt="card-logo">
-        <p id="card-number">0000 0000 0000 0000</p>
+          <section class="card-details">
+          <img src="images/card-logo.svg" alt="card-logo">
+          <p id="card-number">0000 0000 0000 0000</p>
 
-        <section class="bottom">
-          <P>Jane Appleseed</P>
-          <P>00/00</P>
-        </section>
+          <section class="bottom">
+            <P>Jane Appleseed</P>
+            <P>00/00</P>
+          </section>
 
-      </section>
-    </figure>
+          </section>
+        </figure>
 
     <!-- CARD BACK -->
-    <figure class="card-back">
+        <figure class="card-back">
 
-      <img src="images/bg-card-back.png" alt="bg-card-back" />
-      <p id="cvc">000</p>
-    </figure>
+          <img src="images/bg-card-back.png" alt="bg-card-back" />
+          <p id="cvc">000</p>
+        </figure>
 
     </figure>
 
@@ -51,7 +52,7 @@
       <div>
         <label for="cardholdername">Cardholder Name</label>
         <input type="text" placeholder="e.g. Jane Appleseed" id="cardholdername">
-        <p id="cne1">Can't be blank</p>
+        <p id="cne1">Can't be blank</p> 
         <p id="cne2">Wrong format, letters only</p>
       </div>
 
@@ -62,23 +63,24 @@
         <p id="cnue2">Wrong format, numbers only</p>
       </div>
 
-     <div id="lastinput">
-      <div>
-        <label for="exp">Exp. Date (MM/YY)</label>
-        <div id="exp">
-          <div class="forexp">
-            <input type="text" placeholder="MM" id="month"/>
-          <p id="cmon1">Can't be blank</p>
-          <p id="cmon2">Wrong format, numbers only</p>
-          <p id="cmon3">Incorrect month</p>
+      <div id="lastinput">
+          <div>
+            <label for="exp">Exp. Date (MM/YY)</label>
+            <!-- <!this div i cant see the closing div> -->
+            <div id="exp"> 
+              <div class="forexp">
+                <input type="text" placeholder="MM" id="month" maxlength="2"/>
+              <p id="cmon1">Can't be blank</p>
+              <p id="cmon2">Wrong format, numbers only</p>
+              <p id="cmon3">Incorrect month</p>
+              </div>
+            <div class="forexp">
+              <input type="text" placeholder="YY" id="year" maxlength="2"/>
+            <p class="errorforyear" id="cyear1">Can't be blank</p>
+            <p class="errorforyear" id="cyear2">Wrong format, numbers only</p>
+            <p class="errorforyear" id="cyear3">Incorrect year</p>
+            </div>
           </div>
-        <div class="forexp">
-          <input type="text" placeholder="YY" id="year"/>
-        <p class="errorforyear" id="cyear1">Can't be blank</p>
-        <p class="errorforyear" id="cyear2">Wrong format, numbers only</p>
-        <p class="errorforyear" id="cyear3">Incorrect year</p>
-        </div>
-        </div>
       </div>
 
       <div>
@@ -89,7 +91,7 @@
         <p id="ccvc3">Incorrect CVC</p>
       </div>
      </div>
-      <button>Confirm</button>
+      <button onclick="submit()">Confirm</button>
     </form>
   </main>
 

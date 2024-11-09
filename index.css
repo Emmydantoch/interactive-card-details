@@ -5,6 +5,7 @@
     margin: 0;
     font-family: "Space Grotesk", sans-serif;
     user-select: none;
+    /* border: 1px solid red ; */
 }
 img {
     pointer-events: none;
@@ -79,8 +80,9 @@ img {
         display: flex;
 
     }
+    
 
-    main>form{
+    main>form, .thankyou{
         align-self: center;
         display: flex;
         flex-direction: column;
@@ -159,5 +161,94 @@ div p{
 .errorforyear {
          margin-left: 12px;
 }
+#for-mobile{
+    display: none;
+}
+@media only screen and (max-width:1024px){
+    
+    .image-part>img {
+        width: 20rem;
+    }
+    .card-front{
+        left: 50px;
+    }
+    .card-back{
+        left: 100px;
+    }
+}
+@media only screen and (max-width:768px) and (max-width:912px ) {
+    
+    .image-part>img {
+        width: 15rem;
+    }
+    .card-front{
+        left: 50px;
+    }
+    .card-back{
+        left: 100px;
+    }
+    .card-front>img, .card-back>img{
+        width: 15rem;
+    }
+    .card-details> img {
+        width: 3rem;
+    }
+    #card-number{
+        font-size: 14px;
+        letter-spacing: 0.15rem;
+        margin-top: 15px;
+    }
+    .card-details{
+        left: 20px;
+    }
+    .card-back{
+        top: 250px;
+    }
+    #cvc{
+        top: 55px;
+    }
+    
+}
 
+@media only screen and (min-width:280px) and (max-width:600px ) {
+    
+    main{
+        flex-direction: column;
+    }
+    .image-part{
+        width: fit-content;
+    }
+    .card-front{
+        z-index: 10;
+        top: 95px;
 
+    }
+    .card-back{
+        top: 20px;
+    }
+    #cvc{
+        font-size: 12px;
+        top: 58px;
+        right: 30px;
+    }
+    #for-desktop{
+        display: none;
+    }
+    #for-mobile{
+        display: block;
+        width: 100vw;
+        margin-bottom: 60px;
+        height: 12rem;
+    }
+}
+.thankyou >h1{
+    text-transform:uppercase ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 0.3rem;
+    color: hsl(278, 68%, 11%);
+}
+.thankyou >p{
+    margin-bottom: 20px;
+    color: hsl(279, 6%, 55%);
+}
