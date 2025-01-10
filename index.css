@@ -82,7 +82,7 @@ img {
     }
     
 
-    main>form, .thankyou{
+    main>.form, .thankyou{
         align-self: center;
         display: flex;
         flex-direction: column;
@@ -91,12 +91,12 @@ img {
         width: 100%;
     }
 
-    form div{
+    .form div{
         display: flex;
         flex-direction: column;
         margin-bottom: 10px;
     }
-    form div label{
+    .form div label{
         margin-bottom: 5px;
        color: hsl(278, 68%, 11%);
        font-weight: 700;
@@ -123,8 +123,9 @@ img {
         color: hsl(0, 0%, 100%);
         border-radius: 5px;
         font-size: 14px;
+        cursor: pointer;
     }
-    form div input{
+    .form div input{
         padding: 10px;
         border-radius: 10px;
         width: 20rem;
@@ -137,12 +138,12 @@ img {
     #cvcinput{
         width: 9.5rem;
     }
-    form div input::placeholder{
+    .form div input::placeholder{
         color: hwb(270 87% 13%);
         font-weight: 500;
     }
 
-    form div input:focus {
+    .form div input:focus {
         outline-color: hsl(278, 94%, 30%);
     }
 
